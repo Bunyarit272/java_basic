@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Jquery</title>
+    <style>
+        .setbg{
+            background-color: aqua;
+            color:brown;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic JQuery</h1>
+    <p id="p1">ooooooooooooooooooooooooooooooooooooooooooooooooooooooooop</p>
+    <P class="p2">asdadasdasdasdadadasdadasdasdasdasdasdasdasddadadadaadad</P>
+    <span class="p2">asdadasdasdasdadadasdadasdasdasdasdasdasdasddadadadaadad</span>
+    <article>ooooooooooooooooooooooooooooooooooooooooooooooooooooooooop</article>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+        // alert("OK")
+        $("h1").css('color','red')
+            //เข้าถึง tag id
+            $("#p1").css('background-color','yellow')
+            //เข้าถึง class
+            $(".p2").css('background-color','pink')
+            $("span.p2").css('background-color','green')
+            //เรียกใช้ css
+            $("article").addClass('setbg')
+            // $("article").removeClass('setbg')
+            // $("article").toggleClass('setbg')
+        })
+    </script>
+</body>
+</html>

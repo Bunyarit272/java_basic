@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Event</title>
+    <style>
+        p{
+            border: 1px solid green;
+            background-color: orange;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+    <p>opopopopopop</p>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                // alert("yeahhh")
+                // $("p").hide()
+                // $("p").show(3000)
+                // $("p").fadeIn()
+                // $("p").fadeOut()
+                // $("p").fadeToggle()
+                // $("p").slideUp()
+                // $("p").slideDown()
+                $("p").slideToggle()
+                
+
+            })
+        })
+    </script>
+</body>
+</html>
